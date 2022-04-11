@@ -1,0 +1,17 @@
+.header__logo {
+  padding-left: 27px;
+  padding-top: 28px;
+}
+
+@media (min-width: 620px) {
+  .header__logo {
+    padding-top: 45px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 918px) {
+  .header__logo {
+    padding-left: 0;
+  }
+}

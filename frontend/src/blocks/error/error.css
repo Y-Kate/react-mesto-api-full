@@ -1,0 +1,20 @@
+.error {
+  color:#FF0000;
+  font-size: 12px;
+  line-height: 15px;
+  display: block;
+  margin-bottom: 13px;
+  font-weight: 400;
+  max-width: 238px;
+  min-height: 30px;
+}
+
+.error:last-of-type {
+  margin-bottom: 18px;
+}
+
+@media (min-width: 620px) {
+  .error {
+    max-width: 358px;
+  }
+}

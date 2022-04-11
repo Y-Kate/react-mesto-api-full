@@ -1,0 +1,30 @@
+.profile__modify {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #FFF;
+  box-sizing: border-box;
+  background: transparent;
+  background-image: url(../../../images/pen.svg);
+  background-size: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 8px;
+  right: -28px;
+  transition: opacity 0.3s linear;
+}
+
+.profile__modify:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+@media (min-width: 620px) {
+  .profile__modify {
+    width: 24px;
+    height: 24px;
+    position: static;
+    margin-left: 18px;
+    margin-bottom: 8px;
+  }
+}

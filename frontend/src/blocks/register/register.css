@@ -1,0 +1,10 @@
+/* * {outline: 1px solid red;} */
+.register {
+  
+  background-color: #000;
+  width: 100%;
+  height: 601px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
