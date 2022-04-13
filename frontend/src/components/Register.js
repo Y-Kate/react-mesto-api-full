@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { withRouter } from 'react-router-dom';
-import * as authApi from '../utils/authApi';
+import React, { useState } from 'react';
+// import { withRouter } from 'react-router-dom';
+// import * as authApi from '../utils/authApi';
 
 function Register({onRegister}) {
 
@@ -23,7 +23,7 @@ function Register({onRegister}) {
   const handleSubmit = (e) => {
 
     e.preventDefault();
-      // authApi.register(email, password)
+    // authApi.register(email, password)
     //   .then((res) => {
     //     history.push('/sign-up')
     //   })
