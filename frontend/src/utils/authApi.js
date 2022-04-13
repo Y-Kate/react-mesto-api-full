@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://mestokate.nomoredomains.work';
+export const BASE_URL = 'https://api.mestokate.nomoredomains.work';
 
 const checkResponse = (response) => {
   return response.ok 

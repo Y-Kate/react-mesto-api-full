@@ -1,7 +1,7 @@
 // Массив доменов, с которых разрешены кросс-доменные запросы
 const allowedCors = [
-  'https://mestokate.nomoredomains.work/',
-  'http://mestokate.nomoredomains.work/',
+  'https://mestokate.nomoredomains.work',
+  'http://mestokate.nomoredomains.work',
   'localhost:3000',
 ];
 

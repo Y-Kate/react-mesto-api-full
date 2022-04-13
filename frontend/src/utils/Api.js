@@ -88,7 +88,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'https://mestokate.nomoredomains.work',
+  baseUrl: 'https://api.mestokate.nomoredomains.work',
   headers: {
     // authorization: 'c1e5c7f7-edbc-434c-87e1-05004dec9bd7',
     'Content-Type': 'application/json'
