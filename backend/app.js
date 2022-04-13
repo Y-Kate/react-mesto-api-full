@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const { errors } = require('celebrate');
 const router = require('./routes/index');
+const cors = require('./middlewares/cors');
 
 const { PORT = 3000 } = process.env;
 const app = express();
@@ -15,6 +16,7 @@ mongoose.connect('mongodb://localhost:27017/mestodb', {
   useNewUrlParser: true,
 });
 
+app.use(cors);
 app.use(bodyParser.json()); // для собирания JSON-формата
 app.use(cookieParser()); // подключаем парсер кук как мидлвэр
 app.use('/', router);
