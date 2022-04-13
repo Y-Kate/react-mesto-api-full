@@ -5,6 +5,7 @@ const NotFoundError = require('../errors/not-found-error'); // 404
 const ConflictError = require('../errors/conflict-error'); // 409
 const IncorrectDataError = require('../errors/incorrect-data-error'); // 400
 const UnauthorizedError = require('../errors/unauthorized-error'); // 401
+const { JWT_SECRET } = require('../config');
 
 module.exports.getAllUsers = (req, res, next) => {
   User.find({})
@@ -123,7 +124,7 @@ module.exports.login = (req, res, next) => {
       return bcrypt.compare(password, user.password)
         .then((matched) => {
           if (!matched) throw new UnauthorizedError('Указан неверный логин или пароль');
-          const token = jwt.sign({ _id: user._id }, 'some-secret-key', { expiresIn: '7d' });
+          const token = jwt.sign({ _id: user._id }, JWT_SECRET, { expiresIn: '7d' });
           return res.send({ token });
         });
     })

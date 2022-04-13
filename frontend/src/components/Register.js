@@ -60,7 +60,7 @@ function Register({onRegister}) {
         onChange={handleChange}/>
         <span>{message}</span>
         <button className="register__button" type="submit">Зарегистрироваться</button>
-        <p className="register__сaption"> Уже зарегистрированы? <a href="http://localhost:3000/sign-in" className="register__alredy">Войти</a>
+        <p className="register__сaption"> Уже зарегистрированы? <a href="/sign-in" className="register__alredy">Войти</a>
         </p>
       </form>
     </section>
