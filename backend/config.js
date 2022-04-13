@@ -8,5 +8,5 @@ const {
 
 module.exports = {
   JWT_SECRET: NODE_ENV === 'production' ? JWT_SECRET : 'some-secret-key',
-  PORT: NODE_ENV === 'production' ? PORT : 3000,
+  PORT: NODE_ENV === 'production' ? PORT : 3001,
 };
