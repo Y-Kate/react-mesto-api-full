@@ -21,6 +21,13 @@ app.use(bodyParser.json()); // для собирания JSON-формата
 app.use(cookieParser()); // подключаем парсер кук как мидлвэр
 app.use(requestLogger); // подключаем логгер запросов
 
+// для проверки crash-test
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 app.use('/', router);
 
 app.use(errorLogger); // подключаем логгер ошибок
