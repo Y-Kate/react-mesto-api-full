@@ -1,3 +1,5 @@
+import { BASE_URL } from './constants'
+
 class Api {
   constructor(option) {
     this._baseUrl = option.baseUrl;
@@ -88,7 +90,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'https://api.mestokate.nomoredomains.work',
+  baseUrl: BASE_URL,
   headers: {
     // authorization: 'c1e5c7f7-edbc-434c-87e1-05004dec9bd7',
     'Content-Type': 'application/json'

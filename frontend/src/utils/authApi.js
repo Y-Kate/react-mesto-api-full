@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://api.mestokate.nomoredomains.work';
+import { BASE_URL } from './constants'
 
 const checkResponse = (response) => {
   return response.ok 
